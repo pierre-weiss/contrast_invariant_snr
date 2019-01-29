@@ -6,11 +6,11 @@
 %% Loads two images
 u0=double(imread('S2_1.jpg'));
 u0=imresize(u0(:,:,2),[256,256]); % Make it gray scale
-u0=floor(u0); % quantization
+u0=floor(u0); % quantization to avoid stack overflow
 
 u=double(imread('S1_1.jpg'));
 u=imresize(u(:,:,2),[256,256]); % Make it gray scale
-u=floor(u); % quantization
+u=floor(u); % quantization to avoid stack overflow
 
 %% We can also assess the changes between two different scenes
 disp('Local contrast change of type 1')
@@ -18,7 +18,7 @@ tic;[v_loc1,SNR_loc1] = SNR_local1(u,u0);toc;
 v_diff1=u0-v_loc1;
 
 disp('Local contrast change of type 2 (may take time)')
-eps=0;nit=2000;
+eps=0;nit=5000;
 tic;[v_loc2,SNR_loc2] = SNR_local2(u,u0,eps,nit);toc;
 v_diff2=u0-v_loc2;
 

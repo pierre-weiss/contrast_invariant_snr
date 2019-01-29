@@ -44,6 +44,7 @@ CONTENTS:
 - Matlab main files:
    - demo_isotonic_regression_dp.m : an example that computes the isotonic regression on a polytree and compares the result to interior point methods (the comparison requires CVX being installed)
    - demo_SNR.m : an example to evaluate the different SNRs
+   - demo_difference.m : an example to show how the toolbox can be used to compute the difference of images
    - isotonic_regression_iterative.m : solves isotonic regressions with first order methods
    - SNR,SNR_global, SNR_local1, SNR_local2: the different SNRs
 
