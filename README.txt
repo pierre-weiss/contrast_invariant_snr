@@ -6,7 +6,7 @@
 
 ***********************************
 DEVELOPERS:
-Pierre Weiss, Gabiel Bathie, Paul Escande. 
+Pierre Weiss, Gabriel Bathie, Paul Escande, Yiqiu Dong. 
 
 Troubleshooting: Pierre Weiss
 First release: 29/01/2019
