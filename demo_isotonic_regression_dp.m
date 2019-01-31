@@ -1,3 +1,5 @@
+addpath(genpath('./'))
+
 %% The end of this script requires CVX to be installed http://cvxr.com/cvx/
 rng(10);
 L=4;

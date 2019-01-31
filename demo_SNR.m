@@ -3,6 +3,8 @@
 %
 % Developper: Pierre Weiss, 2019.
 
+addpath(genpath('./'))
+
 %% Loads two images
 u0=double(imread('S2_1.jpg'));
 u0=imresize(u0(:,:,2),[256,256]); % Make it gray scale
